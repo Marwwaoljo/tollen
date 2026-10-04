@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>عبايات تولين | TOLEN COUTURE</title>
+
+    <meta
+        name="description"
+        content="اكتشفي مجموعة عبايات تولين الفاخرة بتصاميم مستوحاة من الحكايات والموضة الراقية."
+    >
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Tajawal:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     TOP RIBBON
+===================================================== -->
+
+<div class="tolen-top-ribbon">
+    <span>توصيل فاخر داخل المملكة</span>
+    <span>✦</span>
+    <span>تغليف هدايا تولين</span>
+    <span>✦</span>
+    <span>تصاميم كوتور محدودة</span>
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="tolen-header">
+
+    <div class="tolen-header-inner">
+
+        <!-- Search -->
+        <button
+            type="button"
+            class="tolen-header-icon"
+            aria-label="البحث"
+        >
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+
+        <!-- Logo -->
+        <a
+            href="index.html"
+            class="tolen-logo"
+            aria-label="تولين"
+        >
+            <span class="tolen-logo-ar">تولين</span>
+            <span class="tolen-logo-en">TOLEN COUTURE</span>
+        </a>
+
+
+        <!-- Cart -->
+<button
+    type="button"
+    data-cart
+    class="tolen-header-icon tolen-cart-button"
+    aria-label="سلة التسوق"
+    aria-controls="sideCart"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-bag-shopping"></i>
+
+    <span
+        class="tolen-cart-count"
+        data-cart-count
+        hidden
+    >0</span>
+</button>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="tolen-navigation">
+
+        <a href="index.html">
+            الرئيسية
+        </a>
+
+        <a
+            href="abaya.html"
+            class="active"
+        >
+            العبايات
+        </a>
+
+        <a href="index.html#story">
+            قصتنا
+        </a>
+
+        <a href="index.html#categories">
+            التصنيفات
+        </a>
+
+        <a href="index.html#contact">
+            تواصل معنا
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- =====================================================
+     PAGE HERO
+===================================================== -->
+
+<section class="tolen-collection-hero">
+
+    <div class="tolen-hero-decoration decoration-one">✦</div>
+    <div class="tolen-hero-decoration decoration-two">✧</div>
+
+    <div class="tolen-collection-hero-content">
+
+        <span class="tolen-eyebrow">
+            TOLEN COUTURE
+        </span>
+
+        <h1>
+            مجموعة العبايات
+        </h1>
+
+        <p>
+            حكايات تُنسج من القماش، وتُروى بكل أناقة.
+            اكتشفي تصاميم تولين التي تجمع بين السحر،
+            الأنوثة وفخامة الهوت كوتور.
+        </p>
+
+        <div class="tolen-hero-line"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTION
+===================================================== -->
+
+<section class="tolen-abaya-collection">
+
+    <div class="tolen-section-heading">
+
+        <div>
+
+            <span class="tolen-eyebrow">
+                THE ENCHANTED COLLECTION
+            </span>
+
+            <h2>
+                عبايات تولين
+            </h2>
+
+        </div>
+
+        <p>
+            اختاري القطعة التي تشبه حكايتكِ.
+        </p>
+
+    </div>
+
+
+    <!-- Filters -->
+
+    <div
+        class="tolen-abaya-filters"
+        id="abayaFilters"
+    >
+
+        <button
+            class="abaya-filter active"
+            data-filter="all"
+        >
+            الكل
+        </button>
+
+        <button
+            class="abaya-filter"
+            data-filter="daily"
+        >
+            يومية
+        </button>
+
+        <button
+            class="abaya-filter"
+            data-filter="occasion"
+        >
+            مناسبات
+        </button>
+
+        <button
+            class="abaya-filter"
+            data-filter="couture"
+        >
+            كوتور
+        </button>
+
+        <button
+            class="abaya-filter"
+            data-filter="limited"
+        >
+            إصدارات محدودة
+        </button>
+
+    </div>
+
+
+    <!-- Products -->
+
+    <div
+        class="tolen-abaya-grid"
+        id="abayaGrid"
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTION CTA
+===================================================== -->
+
+<section class="tolen-collection-cta">
+
+    <div class="tolen-collection-cta-content">
+
+        <span class="tolen-eyebrow">
+            TOLEN ATELIER
+        </span>
+
+        <h2>
+            لأن بعض الحكايات<br>
+            تُفصّل لكِ وحدكِ
+        </h2>
+
+        <p>
+            اكتشفي تجربة التفصيل الخاص من دار تولين،
+            حيث تتحول تفاصيلكِ إلى قطعة استثنائية.
+        </p>
+
+        <a
+            href="index.html#contact"
+            class="tolen-luxury-button"
+        >
+            استكشفي تجربة الكوتور
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="tolen-footer">
+
+    <div class="tolen-footer-inner">
+
+        <div class="tolen-footer-brand">
+
+            <span class="tolen-logo-ar">
+                تولين
+            </span>
+
+            <span class="tolen-logo-en">
+                TOLEN COUTURE
+            </span>
+
+            <p>
+                دار أزياء سعودية فاخرة تعيد صياغة
+                الأناقة بروح الحكايات والأساطير.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>روابط سريعة</h3>
+
+            <a href="index.html">الرئيسية</a>
+            <a href="abayas.html">العبايات</a>
+            <a href="index.html#story">قصتنا</a>
+            <a href="index.html#contact">تواصل معنا</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>خدمة العملاء</h3>
+
+            <a href="#">دليل المقاسات</a>
+            <a href="#">الشحن والتوصيل</a>
+            <a href="#">الاستبدال والاسترجاع</a>
+            <a href="#">الأسئلة الشائعة</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>انضمي إلى عالم تولين</h3>
+
+            <p>
+                اشتركي لتصلكِ آخر إصداراتنا
+                ودعوات مجموعات الكوتور المحدودة.
+            </p>
+
+            <div class="tolen-newsletter">
+                <input
+                    type="email"
+                    placeholder="بريدك الإلكتروني"
+                >
+
+                <button type="button">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="tolen-footer-bottom">
+
+        <span>
+            © 2025 TOLEN COUTURE
+        </span>
+
+        <span>
+            صُنع بشغف في المملكة العربية السعودية 🇸🇦
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     SIDE CART
+     استخدمي نفس نافذة السلة الموجودة عندك
+===================================================== -->
+
+<div id="cartOverlay" class="cart-overlay"></div>
+<!-- Side Cart -->
+<aside
+    id="sideCart"
+    class="side-cart"
+    aria-hidden="true"
+    aria-labelledby="cartTitle">
+
+    <!-- Header -->
+    <div class="side-cart__header">
+
+        <div>
+            <span class="side-cart__eyebrow">
+                TOLEN COUTURE
+            </span>
+
+            <h2 id="cartTitle" class="side-cart__title">
+                حقيبة التسوق
+            </h2>
+        </div>
+
+        <button
+            type="button"
+            id="closeCart"
+            class="side-cart__close"
+            aria-label="إغلاق السلة">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <!-- Free Shipping -->
+    <div class="cart-progress">
+
+        <div class="cart-progress__top">
+            <span>
+                التوصيل الراقي
+            </span>
+
+            <span id="shippingMessage">
+                متبقي ٣٠٠ ر.س
+            </span>
+        </div>
+
+        <div class="cart-progress__track">
+            <span
+                id="shippingProgress"
+                style="width: 60%;">
+            </span>
+        </div>
+
+        <p>
+            أكملي مشترياتك للحصول على توصيل مجاني
+        </p>
+
+    </div>
+
+    <!-- Products -->
+    <div
+        id="cartItems"
+        class="side-cart__items">
+
+        <!-- Product 1 -->
+        <div class="cart-item">
+
+            <div class="cart-item__image">
+                <img
+                    src="images/نك.png"
+                    alt="عباية فجر الأنجوم">
+            </div>
+
+            <div class="cart-item__content">
+
+                <div class="cart-item__top">
+
+                    <div>
+                        <span class="cart-item__category">
+                            عبايات فاخرة
+                        </span>
+
+                        <h3>
+                            عباية فجر الأنجوم
+                        </h3>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="cart-item__remove"
+                        aria-label="حذف المنتج">
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="cart-item__bottom">
+
+                    <div class="cart-quantity">
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-action="decrease">
+                            −
+                        </button>
+
+                        <span class="quantity">
+                            1
+                        </span>
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-action="increase">
+                            +
+                        </button>
+
+                    </div>
+
+                    <strong class="cart-item__price">
+                        ١٬٤٩٩ ر.س
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="cart-item">
+
+            <div class="cart-item__image">
+                <img
+                    src="images/نك.png"
+                    alt="عباية تولين الملكية">
+            </div>
+
+            <div class="cart-item__content">
+
+                <div class="cart-item__top">
+
+                    <div>
+                        <span class="cart-item__category">
+                            مجموعة تولين
+                        </span>
+
+                        <h3>
+                            عباية تولين الملكية
+                        </h3>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="cart-item__remove"
+                        aria-label="حذف المنتج">
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="cart-item__bottom">
+
+                    <div class="cart-quantity">
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-action="decrease">
+                            −
+                        </button>
+
+                        <span class="quantity">
+                            1
+                        </span>
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-action="increase">
+                            +
+                        </button>
+
+                    </div>
+
+                    <strong class="cart-item__price">
+                        ١٬٤٩٩ ر.س
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Empty Cart -->
+    <div
+        id="emptyCart"
+        class="cart-empty"
+        hidden>
+
+        <div class="cart-empty__icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <h3>
+            حقيبتك بانتظارك
+        </h3>
+
+        <p>
+            أضيفي قطعة من حكاية تولين لتبدأ رحلتك.
+        </p>
+
+        <button
+            type="button"
+            id="continueShoppingEmpty">
+            اكتشفي المجموعة
+        </button>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="side-cart__footer">
+
+        <div class="cart-summary">
+
+            <div>
+                <span>المجموع الفرعي</span>
+
+                <strong id="cartSubtotal">
+                    ٢٬٩٩٨ ر.س
+                </strong>
+            </div>
+
+            <div class="cart-summary__shipping">
+                <span>التوصيل</span>
+
+                <span>
+                    يُحسب عند الدفع
+                </span>
+            </div>
+
+        </div>
+
+        <button
+            type="button"
+            class="cart-checkout">
+
+            <span>
+                متابعة الطلب
+            </span>
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </button>
+
+        <button
+            type="button"
+            id="continueShopping"
+            class="cart-continue">
+
+            متابعة التسوق
+
+        </button>
+
+        <p class="cart-secure">
+            <i class="fa-solid fa-lock"></i>
+            دفع آمن ومحمي بالكامل
+        </p>
+
+    </div>
+
+</aside>
+<script src="abayas.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
